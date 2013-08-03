@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/step_1_select_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:tileMode="repeat" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type Source City:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Steel_Blue"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/atxtBusSCityList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Type something…."
+                android:lines="1" />
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/divider" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/step_1_select_bg"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:tileMode="repeat" >
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Type Destination City:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/Steel_Blue"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/atxtBusDCityList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Type something…."
+                android:lines="1" />
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/divider" />
+    
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/step_1_select_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:tileMode="repeat" >
+
+            <LinearLayout
+                android:id="@+id/layoutBusJourneyDate"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:dividerPadding="5dp"
+                android:orientation="vertical"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Journey Date"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/Steel_Blue"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:src="@drawable/calender_icon" />
+
+                    <TextView
+                        android:id="@+id/txtBusCheckInDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="top"
+                        android:text="25"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="34sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:orientation="vertical"
+                        android:paddingLeft="5dp" >
+
+                        <TextView
+                            android:id="@+id/txtBusCheckInMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="July 13"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/txtBusCheckInDay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="(Monday)"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/Orange"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+			</LinearLayout>
+			<ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/divider" />
+			<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/imgBusBtnGo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/go_btn" />
+			</LinearLayout>
+        </LinearLayout>
+</ScrollView>
